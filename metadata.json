@@ -1,0 +1,6 @@
+{
+  "name": "Flora AI Image Studio",
+  "description": "Studio generator gambar AI bertenaga Flora.ai API dengan kontrol visual profesional, beragam model seni, prompt styling cerdas, dan galeri interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
