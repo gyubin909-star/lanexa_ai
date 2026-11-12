@@ -1,0 +1,128 @@
+import { StylePreset, GenerationHistoryItem } from '../types';
+
+export const STYLE_PRESETS: StylePreset[] = [
+  {
+    id: 'photoreal',
+    name: 'Fotorealistik 8K',
+    promptSuffix: 'photorealistic, Hasselblad 80mm lens, ultra high definition, fine natural skin texture, studio rim lighting, 8k',
+    iconName: 'Camera',
+    description: 'Pencahayaan presisi studio dengan detail tekstur alami dan kedalaman ruang autentik',
+  },
+  {
+    id: 'cinematic',
+    name: 'Sinematik Film 35mm',
+    promptSuffix: 'cinematic still, 35mm film photography, anamorphic lens flare, moody color grading, volumetric smoke, Kodak Portra 400',
+    iconName: 'Film',
+    description: 'Gradasi warna film analog dengan atmosfer naratif dramatis',
+  },
+  {
+    id: 'anime',
+    name: 'Anime Makoto Shinkai',
+    promptSuffix: 'Makoto Shinkai style anime artwork, breathtaking sky with volumetric clouds, radiant sunlight, vivid colors, highly detailed illustration',
+    iconName: 'Sparkles',
+    description: 'Estetika langit bercahaya, warna jernih dan detail anime beresolusi tinggi',
+  },
+  {
+    id: 'cyberpunk',
+    name: 'Cyberpunk Neon',
+    promptSuffix: 'cyberpunk aesthetic, rainy night street, glowing holographic signage, wet reflections, dark neon atmosphere, high tech gritty details',
+    iconName: 'Zap',
+    description: 'Lampu neon holografis di malam hujan kota futuristik',
+  },
+  {
+    id: 'fantasy',
+    name: 'Epic Fantasy',
+    promptSuffix: 'epic fantasy digital painting, mythical overgrown flora, floating sanctuary, majestic golden hour sunlight, detailed artstation masterpiece',
+    iconName: 'Compass',
+    description: 'Dunia imajinasi magis dengan pemandangan megah dan flora misterius',
+  },
+  {
+    id: 'minimal_product',
+    name: 'Minimalis Mewah',
+    promptSuffix: 'minimalist luxury commercial product photography, soft diffused travertine surface lighting, clean crystalline textures, elegant editorial composition',
+    iconName: 'Gem',
+    description: 'Komposisi bersih untuk katalog produk premium dan desain estetik',
+  },
+];
+
+export const SAMPLE_PROMPTS = [
+  {
+    title: 'Botanist Masa Depan',
+    prompt: 'Potret sinematik ilmuwan botani wanita di laboratorium futuristik dikelilingi anggrek bioluminescent yang bercahaya kebiruan, pencahayaan rim lembut, 8k',
+    style: 'photoreal',
+    model: 'nano-banana-pro',
+    aspect: '1:1',
+  },
+  {
+    title: 'Kota Cyberpunk Hujan',
+    prompt: 'Jalanan kota futuristik basah kuyup oleh hujan di malam hari dengan pantulan lampu neon naga holografis, payung transparan para pejalan kaki',
+    style: 'cyberpunk',
+    model: 'nano-banana-2-1',
+    aspect: '16:9',
+  },
+  {
+    title: 'Kepulauan Mengapung Magis',
+    prompt: 'Kepulauan melayang di atas awan berselimutkan reruntuhan kuno dan pohon raksasa, air terjun mengalir ke kabut senja keemasan, lukisan fantasi epik',
+    style: 'fantasy',
+    model: 'seedream-5-pro',
+    aspect: '16:9',
+  },
+  {
+    title: 'Parfum Kristal Aura',
+    prompt: 'Botol parfum mewah kaca kristal berukir dedaunan flora di atas batu travertine dengan riak air tenang dan pencahayaan lembut studio',
+    style: 'minimal_product',
+    model: 'gpt-image-2',
+    aspect: '1:1',
+  },
+];
+
+export const INITIAL_SHOWCASE: GenerationHistoryItem[] = [
+  {
+    id: 'showcase-1',
+    imageUrl: '/src/assets/images/flora_photoreal_portrait_1794493826955.jpg',
+    prompt: 'Cinematic studio portrait of a futuristic botanist surrounded by glowing bioluminescent orchids, soft dramatic rim lighting, shallow depth of field, 8k resolution, photorealistic Hasselblad shot',
+    model: 'Nano Banana Pro',
+    aspectRatio: '1:1',
+    stylePreset: 'Fotorealistik 8K',
+    engine: 'Lanexa Ai Studio (Nano Banana Pro)',
+    timestamp: 1794493826955,
+    seed: 4928103,
+    chargedCost: 0.04,
+  },
+  {
+    id: 'showcase-2',
+    imageUrl: '/src/assets/images/flora_cyberpunk_street_1794493817614.jpg',
+    prompt: 'Vibrant rain-slicked futuristic street at night with glowing holographic neon signs, reflective puddles, intricate architectural details, atmospheric cinematic depth',
+    model: 'Nano Banana 2.1',
+    aspectRatio: '16:9',
+    stylePreset: 'Cyberpunk Neon',
+    engine: 'Lanexa Ai Studio (Nano Banana 2.1)',
+    timestamp: 1794493817614,
+    seed: 8192301,
+    chargedCost: 0.05,
+  },
+  {
+    id: 'showcase-3',
+    imageUrl: '/src/assets/images/flora_fantasy_landscape_1794493817790.jpg',
+    prompt: 'Majestic floating islands covered in ancient overgrown flora and cascading waterfalls into misty clouds, golden hour sunset glow, epic fantasy digital art',
+    model: 'Seedream 5 Pro',
+    aspectRatio: '16:9',
+    stylePreset: 'Epic Fantasy',
+    engine: 'Lanexa Ai Studio (Seedream 5 Pro)',
+    timestamp: 1794493817790,
+    seed: 3910294,
+    chargedCost: 0.03,
+  },
+  {
+    id: 'showcase-4',
+    imageUrl: '/src/assets/images/flora_product_minimalist_1794493817766.jpg',
+    prompt: 'Clean luxury perfume bottle surrounded by delicate crystalline botanical leaves and water ripples, soft diffused travertine surface lighting, ultra high resolution commercial photography',
+    model: 'GPT Image 2',
+    aspectRatio: '1:1',
+    stylePreset: 'Minimalis Mewah',
+    engine: 'Lanexa Ai Studio (GPT Image 2)',
+    timestamp: 1794493817766,
+    seed: 6719284,
+    chargedCost: 0.04,
+  },
+];
