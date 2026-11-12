@@ -171,7 +171,7 @@ export const GenerationStudio: React.FC<GenerationStudioProps> = ({
         {/* Quick Inspiration Pills */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 pt-0.5 no-scrollbar">
           <span className="text-[11px] text-neutral-500 shrink-0 font-medium">Inspirasi:</span>
-          {SAMPLE_PROMPTS.map((sample, idx) => (
+          {SAMPLE_PROMPTS.length > 0 && SAMPLE_PROMPTS.map((sample, idx) => (
             <button
               key={idx}
               type="button"

@@ -25,12 +25,10 @@ export default function App() {
     } catch {
       // fallback
     }
-    return INITIAL_SHOWCASE;
+    return [];
   });
 
-  const [currentImage, setCurrentImage] = useState<GenerationHistoryItem | null>(() => {
-    return INITIAL_SHOWCASE[0] || null;
-  });
+  const [currentImage, setCurrentImage] = useState<GenerationHistoryItem | null>(null);
 
   const [isGenerating, setIsGenerating] = useState(false);
   const [generationNotice, setGenerationNotice] = useState<string | null>(null);

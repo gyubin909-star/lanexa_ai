@@ -39,3 +39,11 @@ export interface StylePreset {
   iconName: string;
   description: string;
 }
+
+export interface SamplePrompt {
+  title: string;
+  prompt: string;
+  style: string;
+  model: string;
+  aspect: string;
+}
